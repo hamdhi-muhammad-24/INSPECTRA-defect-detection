@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Environment — never commit real keys
+.env
+.env.local
+.env.*.local
+
+# Dataset — too large for Git
+data/mvtec_ad/
+
+# data/rag_documents/ is intentionally tracked (project RAG PDFs)
+
+# Qdrant vector store — generated at runtime
+vector_store/qdrant_storage/
+
+# Generated PDF reports — runtime artifacts
+reports/generated_reports/
+
+# Trained model weights and checkpoints
+models/trained/
+models/checkpoints/
+
+# SQLite database — runtime artifact
+backend/inspectra.db
+*.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
